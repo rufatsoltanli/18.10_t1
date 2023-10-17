@@ -1,0 +1,202 @@
+* {
+    font-family: 'Gabarito', sans-serif;
+}
+
+nav {
+
+    font-size: 20px;
+    height: 60px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.ncont {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.nast {
+    display: flex;
+    align-items: center;
+
+}
+
+.HAS {
+    display: flex;
+    padding-left: 30px;
+    gap: 10px;
+    
+}
+.HAS p{
+    transition: .5s;
+    
+}
+.HAS p:hover{
+    color: rgb(126, 126, 126);
+    
+}
+
+.nand button {
+    padding: 9px 30px;
+    background-color: aliceblue;
+    border-radius: 9px;
+    border: 1px solid black;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.nand button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.nand button span {
+    background-color: rgb(141, 141, 141);
+    width: 15px;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+.htxt {
+    font-size: xx-large;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+}
+
+.cardscont {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 60px;
+    padding-left: 21%;
+    left: 10%;
+    padding-bottom: 30px;
+}
+
+.card {
+    width: 320px;
+    height: 430px;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img {
+    padding-bottom: 30px;
+    width: 430px;
+    height: 200px;
+    position: relative;
+}
+
+.img span {
+    position: absolute;
+    padding: 2px 5px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    top: 5px;
+    right: 120px;
+}
+.img .sold{
+    position: absolute;
+    padding: 2px 5px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    top: 5px;
+    right: 120px;
+}
+
+.card img {
+    max-width: 430px;
+    max-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    margin-bottom: 10px;
+
+}
+.img .m{
+    position: absolute;
+    left:10px;
+    width: 290;
+}
+.img .h{
+    position: absolute;
+    left:10px;
+    width: 280px;
+}
+.img .Sold{
+    background-color: brown;
+}
+.txt {
+    background-color: rgb(94, 94, 94);
+    padding: 65px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: x-large;
+
+}
+
+.stars {
+    color: rgb(218, 218, 59);
+    font-size: 16px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: black;
+    color: aliceblue;
+}
+@media only screen and (max-width:900px) {
+  body{
+    display: grid;
+    grid-template-columns: auto;
+    
+    
+   }
+    nav {
+
+       width: 100%;
+        min-height: 70px;
+        
+    }
+    .nand button{
+    display: none   ;    
+    }
+    
+    .ncont {
+       max-width: 100vh;
+       
+    }
+    .htxt {
+       min-width: 100vh;
+    }
+    .cardscont{
+        grid-template-columns: auto;
+    }
+}
